@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "newstuff",
+	"version": "${version}",
+	"name": "Creative Items/Blocks",
+	"description": "This mod adds new blocks, and items, like the all-new SlipperCube2000, or the good ol' ChugJugJarOfPicklesShutUpNi-!",
+	"authors": [
+		"Ellis Matérn: youtube.com/@ellis0099",
+		"kaupenjoe: youtube.com/@ModdingByKaupenjoe"
+	],
+	"contact": {
+		"homepage": "https://youtube.com/@ellis0099",
+		"sources": "https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/newstuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ellis.newstuff.CreativeItemsBlocks"
+		],
+		"fabric-datagen": [
+			"net.ellis.newstuff.CreativeItemsBlocksDataGenerator"
+		],
+		"client": [
+			"net.ellis.newstuff.CreativeItemsBlocksClient"
+		]
+	},
+	"mixins": [
+		"newstuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
